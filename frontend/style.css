@@ -1,0 +1,483 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff5f9;
+    scroll-behavior: smooth;
+}
+
+/* ================= SECTION DEFAULT ================= */
+section {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #ff4da6, #ff80bf);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* ================= HOME ================= */
+#home {
+    padding: 100px 20px;
+    background: linear-gradient(to right, #ffb6d5, #ff4da6);
+    color: white;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ================= BUTTONS ================= */
+#home button,
+.about-text button,
+form button {
+    background: white;
+    color: #ff4da6;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#home button:hover,
+.about-text button:hover,
+form button:hover {
+    background: #e60073;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ================= SERVICES ================= */
+#services {
+    background: #fff0f6;
+}
+
+#services h2 {
+    margin-bottom: 30px;
+    color: #ff4da6;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.service-card h3 {
+    padding: 10px;
+    color: #ff4da6;
+}
+
+/* ================= ABOUT ================= */
+#about {
+    background: #fff0f6;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-img img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text h3 {
+    color: #ff4da6;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ================= GALLERY ================= */
+#gallery {
+    background: #fff0f6;
+}
+
+#gallery h2 {
+    color: #ff4da6;
+    margin-bottom: 20px;
+}
+
+.gallery-buttons {
+    margin-bottom: 20px;
+}
+
+.gallery-buttons button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    background: #ff4da6;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.gallery-buttons button:hover {
+    background: #e60073;
+}
+
+.gallery-buttons button.active {
+    background: #e60073;
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* HIDE FILTER */
+.hide {
+    display: none !important;
+}
+
+/* ================= BOOKING ================= */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+    background: #fff0f6;
+    text-align: center;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item h3 {
+    color: #ff4da6;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #ff4da6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* ================= LIGHTBOX ================= */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .service-box {
+        flex-direction: column;
+    }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+#services h2,
+#gallery h2,
+#about h2,
+#contact h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #ff4da6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* spacing between text and button */
+.about-points {
+    margin-bottom: 25px;
+}
+
+/* better readability */
+.about-points p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+/* button spacing */
+.about-text button {
+    margin-top: 10px;
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+.close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+form input,
+form select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+form button {
+    background: #ff4da6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #e60073;
+    transform: scale(1.05);
+}
+#reviews {
+    background: #fff0f6;
+    text-align: center;
+}
+
+.review-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.review-card h4 {
+    color: #ff4da6;
+}

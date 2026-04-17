@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+
+    <!-- If you have external CSS, keep this -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #fff0f5;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4da6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background: #ff4da6;
+            color: white;
+        }
+
+        /* Status badge styles */
+        .status {
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .Pending {
+            background: orange;
+            color: white;
+        }
+
+        .Confirmed {
+            background: blue;
+            color: white;
+        }
+
+        .Completed {
+            background: green;
+            color: white;
+        }
+
+        .Cancelled {
+            background: red;
+            color: white;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+
+        button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💄 Admin Dashboard - Bookings</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Service</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="data">
+        <!-- DATA FROM ADMIN.JS -->
+    </tbody>
+</table>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
